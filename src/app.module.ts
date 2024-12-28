@@ -6,7 +6,6 @@ import { User } from './domain/entities/user.entity';
 import { AuthService } from './application/services/auth.service';
 import { FirebaseAdminService } from './infrastructure/firebase/firebase-admin.service';
 import { BlogService } from './application/services/blog.service';
-import { FirebaseAuthGuard } from './api/guards/firebase-auth-guard';
 import { AuthController } from './api/controllers/v1/auth.controller';
 import { BlogController } from './api/controllers/v1/blog.controller';
 import { UserService } from './application/services/user.service';
@@ -30,13 +29,7 @@ import { UserController } from './api/controllers/v1/user.controller';
     }),
     TypeOrmModule.forFeature([User, Blog]),
   ],
-  providers: [
-    FirebaseAdminService,
-    AuthService,
-    BlogService,
-    FirebaseAuthGuard,
-    UserService,
-  ],
+  providers: [FirebaseAdminService, AuthService, BlogService, UserService],
   controllers: [AuthController, BlogController, UserController],
 })
 export class AppModule {}
