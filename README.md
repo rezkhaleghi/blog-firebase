@@ -124,4 +124,3 @@ Created by "PocketJack (Rez Khaleghi)"
 
 - GitHub: https://github.com/rezkhaleghi
 - Email: rezaxkhaleghi@gmail.com
-# blog-firebase
