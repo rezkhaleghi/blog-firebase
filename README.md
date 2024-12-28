@@ -92,6 +92,8 @@ docker-compose up
 
 5. Access the API at `http://localhost:<PORT>` (as defined in your environment variables).
 
+6. You can also use postman api collection (postman_collection.json) in root of the project.
+
 ---
 
 ## **Usage Flow**
@@ -109,12 +111,6 @@ docker-compose up
    - Use `page` and `limit` query parameters to navigate lists efficiently.
 
 ---
-
-## **Future Improvements**
-
-- Implement role-based access control (e.g., admin users).
-- Add advanced search and filtering options for blog explorer.
-- Enhance image management with cloud storage (e.g., AWS S3).
 
 This project demonstrates secure authentication, modular architecture, and seamless user experience with robust backend development principles.
 
